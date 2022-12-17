@@ -27,7 +27,21 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "dev": "webpack-dev-server --progress --mode development",
-    "build": "webpack --progress --mode production"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scriptss test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

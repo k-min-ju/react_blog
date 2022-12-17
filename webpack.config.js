@@ -46,6 +46,11 @@ module.exports = {
             template: './public/index.html', // 번들링된 js 소스가 index.html 템플릿에 들어가게 됨
         }),
     ],
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     devServer: {
         // webpack-dev-server 설정
         host: 'localhost',
