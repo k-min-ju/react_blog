@@ -1,5 +1,5 @@
 // index.js
-import { render } from "react-dom";
+import ReactDOM from "react-dom/client";
 import {
     BrowserRouter,
     Routes,
@@ -9,8 +9,8 @@ import App from "./App";
 import Expenses from "./routes/expenses";
 import Invoices from "./routes/invoices";
 
-const rootElement = document.getElementById("root");
-render(
+const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+rootElement.render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />}>
@@ -18,6 +18,5 @@ render(
                 <Route path="invoices" element={<Invoices />} />
             </Route>
         </Routes>
-    </BrowserRouter>,
-    rootElement
+    </BrowserRouter>
 );
