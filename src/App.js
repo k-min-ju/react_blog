@@ -97,7 +97,7 @@ export default function App(props) {
         }
         render() {
             return (
-              <div>안녕222222</div>
+              <div>안녕22222222</div>
             );
         }
     }
