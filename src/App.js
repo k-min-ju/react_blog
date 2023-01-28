@@ -26,7 +26,7 @@ export default function App(props) {
             <div className="black-nav">
                 <div>개발 blog</div>
             </div>
-            
+
             <button onClick={ btnChg }>변경버튼</button>
             <button onClick={ btnSort }>정렬버튼</button>
 
